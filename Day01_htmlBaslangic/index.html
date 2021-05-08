@@ -1,0 +1,103 @@
+<html 
+<head>
+    <title>Ilk Sayfam</title> <!-- Sol ustte sekmenin yerinde yazan yazi -->
+</head> 
+
+<!-- body'nin yazina style yaptiktan sonra stillendirebiliyorum -->
+<!-- Style attribute ile verilen ozellikler aslinda CSS stillendirmeleridir. 
+Bu sekilde stillendirmelere Inline CSS denilir. -->
+<body style="background-color: rgb(87, 196, 190);"> 
+     <h1>HTML</h1> <!-- Sayfadaki en ustteki yazi -->
+
+    <h2>CSS</h2> <!-- h1'in altindaki yazi yazi -->
+
+    <h3>JS</h3> <!-- h'in sayisi arttikca boyutlari kuculuyor asagi dogru -->
+
+    <h4 style="font-size:25px; color: red;">Java</h4> 
+    <!-- Font size yazi boyutunu buyuttu, yaninada color ile renk ekledim -->
+
+    <br> <!-- "br" bir satir bosluk konulmasini sagliyor -->
+    <p>Arada bosluk var "br" tag'i kullandim</p>
+    <br>
+
+    <h2 style="color: yellow;">HTML Nedir ?</h2> <!-- h2'nin boyutu h3, h4'den daha buyuk -->
+    <p><strong>HTML dersine hosgeldiniz</strong></p>
+    <p><em>HTML</em> <del>programlama</del> dili degildir, 
+        <mark> bir  isaretleme dilidir</mark></p>
+    <!--Paragraflar, headingler otomatik bir alt satira iner.
+        Fakat bazi komutlar otomatik olarak asagi inmez -->
+    <!-- Strong ve bold yaziyi guclendirir. -->
+    <!-- mark tag'i fosforlamaya yarar -->
+    <!-- del tag'i yazinin ustunu cizer -->
+    <!-- em tag'i veya i tag'i yaziyi italik yapar -->
+    <!-- hr yatay cizgi icin kullanilir -->
+    <!-- u yazinin altini cizer -->
+    <!-- blockquote yaziya girinti verir. Genellik alinti yaparken kullanilir -->
+    
+    <h2 style="color: red;">LISTE OLUSTURMA</h2>
+    <p>HTML'de liste olusturmak icin &ltol&gt gibi tag'lar kullanilir.</p>
+    <!-- &lt &gt arasina bir sey yazdigimizda <> isaretlerini ekler yazi olarak -->
+    <ol type="A" start="3"> 
+        type="A" start="3" seklinde siralama baslangici secilebilir
+        1,A,a,I,i'den biri kullanilabilir. start kismi rakam olmak zorundadir.
+        Konulan rakam hangi harf,sayi'dan baslanacagini secer.
+        Burada C'den baslamasinin sebebi; A=1,B=2,C=3 oldugu icin C'den basliyor.
+        <!-- Yazilanlari numarali bir liste seklinde olusturur -->
+        <!-- ol => ordered list -->
+        <li>Kazim</li> 
+        <li>Nihat</li>
+        <li>Elif</li>
+        <li>Sude</li>
+    </ol>
+    <p>Maddeli liste olusturmak icin &ltul&gt tag kullanilir.</p>
+    <ul type = "circle">
+<p>
+    ul'nin ozelligini degistirmek icin type diyorum sonra yazinin solundaki
+    sekli degistirebiliyorum.
+    <ol>type = "square" => Kare</ol>
+    <ol>type = "disc" => Ici dolu yuvarlak</ol>
+    <ol>type = "circle" => Ici bos yuvarlak</ol>
+</p>
+        <!-- ul => unordered list -->
+        <li>Bursa</li>
+        <li>Istanbul</li>
+        <li>Tokat</li>
+    </ul>
+    <p>Icice Liste Olusturma</p>
+    <ol> 
+        <li type="1"> 
+            Istanbul
+            <ul>
+                <li>Fatih</li>
+                <li>Uskudar</li>
+                <li>Esenyurt</li>
+            </ul>
+        </li>
+        <li>
+            Bursa
+            <u>
+                <li>Mudanya</li>
+                <li>Iznik</li>
+                <li>Gursu</li>
+            </u
+        </li>
+    </ol>
+    <h2>LINK VERMEK</h2>
+    <p>Link vermek icin &lta&gt tag'i kullanilir</p>
+    <a href="www.google.com.tr" target="_blank">Google icin tikla</a>
+    <br />
+    <!-- a gibi, span gibi bazi etiketler inline etiketlerdir -->
+    <a href="gorseller.html" target="_blank">Gorseller icin tiklayiniz..</a>
+    <br />
+    <a href="assets/img/indir.png" target="_blank">Turk Bayragi icin tikla</a>
+    <br />
+    <a href="mailto:nihattekiner@gmail.com">Mail icin tiklayiniz</a>
+    <br />
+    <a href=“https://wa.me/90123456789”>Whatsapp</a> 
+    <br />
+    <a href=“tel:+90123456789”>Telefonla Ara</a>
+    <br />
+    
+</body>
+</html>
+

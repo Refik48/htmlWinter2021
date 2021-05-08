@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML | TABLO EKLE | CSS inline</title>
+    <style>
+        /* Bu alan CSS kodlari icerir. */
+        /* CSS Selector'ler ile istenilen HTML elemanina stillendirme yapilabilir */
+        h1{
+            color: green;
+            font-size: 25px; /* Boyutunu ayarlar */
+            font-family: 'Franklin Gothic Medium', 
+            'Arial Narrow', Arial, sans-serif; /* Yazi tipini degistirir */
+            text-align: center; /* Ortalar */
+            margin-top: 50px; /* Yukardan 50px'lik bosluk birakir */
+        }
+        /* Bu en kullanisli yontem degildir cunku style etiketi ile yapilan stillendirmeler
+        sadece bu dosya icin gecerli olur. Eger tum proje icin global bir stillendirme istersek
+        harici bir .CSS dosyasi olusturmak gerekir ve bu dosyayi HTML'e import etmek gerekir. */
+        *{
+            text-align: center;
+            /* Aksi belirtilmedikce bu sayfada bundan sonrasini ortala dedim */
+        }
+        p{
+            color: blue;
+        }
+        #p1 {
+            color: blueviolet;
+        }
+        .p2 {
+            color: orange;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 25px;
+            text-align: left;
+            /* text-align normalde ortada idi ama burada aksini belirtip sola aldim. */
+        }
+    </style>
+</head>
+<body>
+    <h1> TABLO EKLEME </h1>
+    <!-- Bu sadece bu baslik icin red oldu. 
+        Ben butun h1'lerimi kirmizi yapmak icin ne yapacagim ? 
+        Title tag'i altina, head icine style CSS kodumuzu olusturuyoruz. -->
+    <h1>CSS stillendirme</h1>
+    <p id="p1">Bu bir paragraftir.</p>
+    <!-- id bir CSS selector'dur. Sadece 1 kez kullanmak icin mantiklidir.
+        1'den fazla kullanilmasi mantiksal degildir. 
+        Tek element stillendirilecek ise kullanmak mantiklidir.
+        id'ye erisim stillendirmede # kullanilir. -->
+
+    <p class="p2">Bu da baska bir paragraftir.</p>
+    <!-- Class selectoru ise grup stillendirmesi icin kullanilir. -->
+    <p class="p2">CSS HTML'e gore daha fazla detay icermektedir.</p>
+</body>
+</html>
