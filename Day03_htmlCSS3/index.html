@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">    
+    <title>Formlar</title>
+</head>
+<body>
+    <h1>FORMLAR</h1>
+    <p>&ltform&gt tag'i kullanilir.</p>
+    <p>Kayit sayfalarinda kullanilan kaydetme islemlerini form denir.</p>
+    <p>text genel bilgi girisi icin</p>
+    <p>password sifre girisi icin kullanilir, girilen deger gosterilmez</p>
+    <p>number sadece rakam girisi icin kullanilir</p>
+    <p>search arama kutusu olarak kullanilir. Kosede textbox'i</p>
+    <p>label tag'i icine eklenen for attribute'u ile label ile inputlar arasinda iliski kurar</p>
+    <form action="kaydet.php">
+    <!-- action kismi sunucu ile ilgili, formun kaydet.php'e kaydedilmesini sagliyor. -->
+    <label for="ad">Adiniz:</label>
+    <!-- Normalde label'in sagina for="" yaziyoruz.
+            Fakat Adiniz yaziniza tiklayinca yazi yazmak bolumune gecsin istiyorusak 
+            for'un icine tanimlama yapmaliyiz sonra aynisini input'a yazmaliyiz.-->
+    <!-- label yazdigimizda otomatik bir alt satira gecmez. 
+            Gecirmek istiyorsak br tag'i kullanmaliyiz -->
+    <input class="input" id="ad" type="text" placeholder="isim giriniz" maxlength="40" /> <br />
+<!-- maxlength="40" ile ne fazla 40 karakter girilebilir. -->
+
+    <label for="sifre">Sifreniz:</label>
+    <input class="input" id="sifre" type="password" required="" /> <br />
+    <!-- required bos birakilan alanlar uyari vermesini sagliyor. Verisiz giris kabul etmiyor. -->
+
+    <label for="sayi">Yasiniz:</label>
+    <input class="input" id="sayi" type="number" 
+    max="100" min="0" name="yas" /> <br />   
+    <!-- max, min girilebilecek en buyuk degerleri belirler -->
+    <!-- name yazdigimizda kullanicinin girdigi degeri sunucuya name adi altinda gonderir.
+            yas = 25 olarak gidecek ornek olarak -->
+
+    <label for="email">Email:</label>
+    <input class="input" id="email" type="email" name="email" value="" /> <br />
+            
+    <input type="submit" value="Gonder" />
+    <!-- submit olursa submit butoni olarak dusunur ve yazilanlari kaydet.php'e aktarir 
+            ama bizde olmadigi icin hata veriyor suan sorun yok -->
+    <input type="button" value="Temizle" />
+    <!-- Temizle butonunu goruntu olarak yaptik bu islemi js'de ogrenecegiz. -->
+</form>
+</body>
+</html>

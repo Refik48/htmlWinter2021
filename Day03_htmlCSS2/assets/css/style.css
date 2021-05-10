@@ -1,0 +1,47 @@
+* {
+    text-align: center;
+}
+
+h1{
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 30px;
+}
+
+.tablo{
+    border: 4px solid blue; 
+    /* Tablonun dis cizgisini olusturdu. 
+    px olan kalinlik, 
+    solid | double | dashed(bir kac turu daha var) olan cizgi turu, 
+    grey olan rengini belirliyor.
+    Siralamayi bu sekilde yapmak daha iyi sorun olusturabilir aksi takdirde*/
+    border-collapse: collapse; 
+    /* Ust ustte cakisan cizgileri tek cizgi yapmaya yariyor. */
+    width: 500px;
+    /* Tablolarin uzunlugunu belirler. Sadece px degil cm, % olarak da kullanilabilir */
+    margin-left: auto;
+    margin-right: auto;
+    /* Soldan ve sagdan otomatik bosluk koyarak nesneleri ortaya hizalar. */
+}
+/* Birden fazla atribute'e ayni stillendirme yapilacaksa virgul ile ayrilarak yazilabilir. 
+    th, gibi*/
+th,
+td {
+    border: 4px solid blue;
+}
+/* th ve td'nin ozellikleri ayni olsun dedim. */
+th {
+    background-color: greenyellow;
+}
+/* Ortak olan ozellikleri yazdim ama ayriyetten kendilerine has ozelliklerde ekleyebilirim. */
+tr:hover {
+    /* hover, mouse ile uzerine gelince aktif olmasini sagliyor. */
+    background-color: red; 
+    /* Mouse ile uzerine gelince o kutucugun arka planini red yaptik. */
+}
+/* Zebra Ozelligi icin; */
+tr:nth-child(even) {
+    background-color: aqua;
+}
+/* even oldugu icin tekli satirlari aqua renginde yapti,
+    odd olursa eger ciftler icin yapiyor. */
