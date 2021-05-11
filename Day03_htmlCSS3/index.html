@@ -17,7 +17,7 @@
     <p>label tag'i icine eklenen for attribute'u ile label ile inputlar arasinda iliski kurar</p>
     <form action="kaydet.php">
     <!-- action kismi sunucu ile ilgili, formun kaydet.php'e kaydedilmesini sagliyor. -->
-    <label for="ad">Adiniz:</label>
+    <label class="label" for="ad">Adiniz:</label>
     <!-- Normalde label'in sagina for="" yaziyoruz.
             Fakat Adiniz yaziniza tiklayinca yazi yazmak bolumune gecsin istiyorusak 
             for'un icine tanimlama yapmaliyiz sonra aynisini input'a yazmaliyiz.-->
@@ -26,25 +26,33 @@
     <input class="input" id="ad" type="text" placeholder="isim giriniz" maxlength="40" /> <br />
 <!-- maxlength="40" ile ne fazla 40 karakter girilebilir. -->
 
-    <label for="sifre">Sifreniz:</label>
+    <label class="label" for="sifre">Sifreniz:</label>
     <input class="input" id="sifre" type="password" required="" /> <br />
     <!-- required bos birakilan alanlar uyari vermesini sagliyor. Verisiz giris kabul etmiyor. -->
 
-    <label for="sayi">Yasiniz:</label>
+    <label class="label" for="sayi">Yasiniz:</label>
     <input class="input" id="sayi" type="number" 
     max="100" min="0" name="yas" /> <br />   
     <!-- max, min girilebilecek en buyuk degerleri belirler -->
     <!-- name yazdigimizda kullanicinin girdigi degeri sunucuya name adi altinda gonderir.
             yas = 25 olarak gidecek ornek olarak -->
 
-    <label for="email">Email:</label>
+    <label class="label" for="email">Email:</label>
     <input class="input" id="email" type="email" name="email" value="" /> <br />
-            
-    <input type="submit" value="Gonder" />
-    <!-- submit olursa submit butoni olarak dusunur ve yazilanlari kaydet.php'e aktarir 
-            ama bizde olmadigi icin hata veriyor suan sorun yok -->
-    <input type="button" value="Temizle" />
+    
+    <p>Formumuzda yazilari ve kutucuklari esit olarak hizalamak istersek tablo seklinde de yapabiliriz.
+            Fakat tablo sekli sayfanin acilmasini biraz daha olsa yavaslatacaktir 
+            ve sitelerde hiz onemlidir. O yuzden yavas yavas tercih edilmemeye baslaniyor.
+    </p>
+
+    <input class="btn" type="submit" value="Gonder" />
+    <!-- submit olursa submit butonu olarak dusunur ve yazilanlari kaydet.php'e aktarir 
+            ama bizde olmadigi icin hata veriyor suan sorun yok(tum veriler eksiksiz girilirse) -->
+    <input class="btn" type="button" value="Temizle" />
     <!-- Temizle butonunu goruntu olarak yaptik bu islemi js'de ogrenecegiz. -->
+
+    <!-- input tag'i yerine button tag'i var, input'tan fazlasi button'a resim koyabiliyoruz.-->
+    <button type="submit">Sakla</button>
 </form>
 </body>
 </html>
