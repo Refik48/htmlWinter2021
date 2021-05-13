@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 20px 30px; /* Kenardan sagdan soldan nereye kadar gidecegini sectik*/
+    /*  Tek sayi yazarsak her yerde gecerlidir.
+        Iki sayi yazarsak ust,alt ve sag,sol seklinde gecerli olaacaktir.
+        20 = Ust ve Alt icin
+        30 = Sag ve Sol icin
+
+        Ikiden fazla sayi yazdigimiz zaman 
+        top, right, bottom, left 
+        seklinde (saat yonunde) sirayla gider*/
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 20px;
+        color: black;
+}
+
+.header {
+    color: white;
+    background-color: red;
+    height: 50px;
+    padding: 50px; 
+    margin-bottom: 10px; /* Alt satira bosluk icin yazdim (dizayna gore)*/
+}
+
+.nav {
+    padding: 10px;
+    background-color: blue;
+}
+
+.aside {
+    background-color: yellow;
+    float: left;
+    width: 25%;
+    height: 70%; /* 100% verince bunlarin asagisindaki kisim altta kaliyor mouse ile inmek gerekiyor.*/
+}
+
+.main {
+    float: left; 
+    width: 75%; /* Ustteki 25 oldugu icin kalan tamamini buna vermek icin 75 yaptim */
+    /* Eger vermeseydim bunun uzunlugu yazi boyutu kadar olacakti ve devamini beyaz olarak birakacakti*/
+    background-color: antiquewhite;
+    height: 70%; /* 100% verince bunlarin asagisindaki kisim altta kaliyor mouse ile inmek gerekiyor.*/
+}
+
+.footer {
+    padding: 30px;
+    background-color: rgb(145, 138, 138);
+}

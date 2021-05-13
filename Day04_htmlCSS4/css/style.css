@@ -70,11 +70,18 @@ img {
     width: 100%;
     background-color: purple;
 }
+/* kutularin icindeki yazilari dikey olarak ortalamak icin 
+display: flex; kullanilabilir, arastir en kolay yontemdir.
+veya
+min-height: 10cm;
+display: table-cell;
+vertical-align: middle; bu tarz kullanilabilir*/
 
 /* Float:left kullanildiginda alt satira gecildiginde ust satir ile 
 bir birlesme olursa cleardix adinda bir yontem kullanilir. Bunun icin 
 birlesen satira bir div eklenir. Buraya da clearfix class'i olusturulur.
 <div class="clearfix"></div> index'e eklenecek div.
+
 .clearfix{
     clear:both;
 } buraya eklenecek class*/
