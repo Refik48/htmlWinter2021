@@ -4,6 +4,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <title>Formlar</title>
 </head>
 <body>
@@ -19,8 +23,8 @@
     <!-- action kismi sunucu ile ilgili, formun kaydet.php'e kaydedilmesini sagliyor. -->
     <label class="label" for="ad">Adiniz:</label>
     <!-- Normalde label'in sagina for="" yaziyoruz.
-            Fakat Adiniz yaziniza tiklayinca yazi yazmak bolumune gecsin istiyorusak 
-            for'un icine tanimlama yapmaliyiz sonra aynisini input'a yazmaliyiz.-->
+            Fakat Adiniz yaziniza tiklayinca yazi yazmak bolumune gecsin istiyorsak 
+            for'un icine tanimlama yapmaliyiz sonra aynisini input'a id="" seklinde yazmaliyiz-->
     <!-- label yazdigimizda otomatik bir alt satira gecmez. 
             Gecirmek istiyorsak br tag'i kullanmaliyiz -->
     <input class="input" id="ad" type="text" placeholder="isim giriniz" maxlength="40" /> <br />
@@ -45,14 +49,31 @@
             ve sitelerde hiz onemlidir. O yuzden yavas yavas tercih edilmemeye baslaniyor.
     </p>
 
-    <input class="btn" type="submit" value="Gonder" />
+    <label class="label" for="adres">Adres</label>
+    <textarea name="text-alani" id="adres" rows="10"></textarea><br />
+    <!-- coloumn'i sildim ayarlamasi biraz zor diye 
+        onun yerine style'da bunun width'ini 200 olarak ayarladim. -->
+
+    <button class="btn" type="submit">
+        <i class="far fa-save"></i> Gonder
+    </button>
     <!-- submit olursa submit butonu olarak dusunur ve yazilanlari kaydet.php'e aktarir 
             ama bizde olmadigi icin hata veriyor suan sorun yok(tum veriler eksiksiz girilirse) -->
-    <input class="btn" type="button" value="Temizle" />
+    <input class="btn" type="reset" value="Temizle" />
     <!-- Temizle butonunu goruntu olarak yaptik bu islemi js'de ogrenecegiz. -->
 
     <!-- input tag'i yerine button tag'i var, input'tan fazlasi button'a resim koyabiliyoruz.-->
     <button type="submit">Sakla</button>
+
+    <button class="btn" type="reset">
+        <i class="fas fa-trash-alt">Temizle</i>
+    </button>   <!-- type="reset" olursa verileri siler. -->
+     <!-- NOT : Derste yazi yazarken Gonder butonunun tag'ini input yapmistim.
+        Fakat simdi resim ekleyecegim icin o tag'i button olarak degistiriyorum. -->
+
+        <!-- Eger resmin rengini degistirmek istersem style'in icinde 
+                resmin class'ini yazarak color'ini degistirebiliriz.
+                VEYA i { } tagini style icinde degistirebiliriz. -->
 </form>
 </body>
 </html>

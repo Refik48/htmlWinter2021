@@ -1,0 +1,80 @@
+* {
+    margin: 0; /* Tum marginleri 0'lar*/
+    box-sizing: border-box; /* Border box yapildiginda 
+    kutularin katmanlarini ayri ayri degerlendirmeyi sagliyor*/
+    font-size: 30px;
+}
+
+body{
+    margin-left: 40px;
+    margin-right: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-size: 45px;
+    color: red;
+    text-align: center;
+}
+
+img {
+    width: 20%;
+}
+
+.kutu {
+    border: 5px solid green;
+    text-align: center; /*Div'in icindekileri ortalar. Div'i ortalamaz.*/
+    margin-left: auto;
+    margin-right: auto; /* sag ve soldan auto ile div'i ortaladik.*/
+    width: 800px;
+    margin-bottom: 20px; /* Her kutu'nun ustune 20px'lik bosluk koyuyor*/
+    background: yellow;
+    /*div'lerde ki kutu class'ina bir backround color verdim.*/
+}
+/* Kutu hepsi icin ortak olanlar oldu. Alttakiler ise daha da ozellestirdiklerim oldu. */
+
+.orta {
+    background-color: red;
+    width: 100%; /* Buradaki width burayi ilgilendirir diger div'ler ayridir.*/
+}
+
+.alt {
+    background-image: linear-gradient(pink,orange);
+    width: 600px;
+}
+
+.kutu1 {
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    float: left; /*blok nesneleri yanyana dizmek icin kullanilir.*/
+}
+.kutu1.sari {
+    width: 30%; /* Yan yana dizilen nesnelerin buyuklukleri % ile belirlenebilir*/
+    background-color: yellow;
+}
+.kutu1.yesil {
+    width: 20%; /* Yan yana dizilen nesnelerin buyuklukleri % ile belirlenebilir*/
+    background-color: green;
+}
+
+.kutu1.kirmizi {
+    width: 40%; /* Yan yana dizilen nesnelerin buyuklukleri % ile belirlenebilir*/
+    background-color: red;
+}
+.kutu1.mavi {
+    width: 10%; /* Yan yana dizilen nesnelerin buyuklukleri % ile belirlenebilir*/
+    background-color: blue;
+}
+.kutu1.mor {
+    width: 100%;
+    background-color: purple;
+}
+
+/* Float:left kullanildiginda alt satira gecildiginde ust satir ile 
+bir birlesme olursa cleardix adinda bir yontem kullanilir. Bunun icin 
+birlesen satira bir div eklenir. Buraya da clearfix class'i olusturulur.
+<div class="clearfix"></div> index'e eklenecek div.
+.clearfix{
+    clear:both;
+} buraya eklenecek class*/

@@ -24,8 +24,11 @@ body {
 }
 
 label {
-    display: block; /* inline olan bir eleman blok hale getirilebilir.*/
-    /* nesneleri blok hali getiriyor, inline blok ise hem inline hem blok calisiyor*/
+    display: block; /* Label tag'i diger tag'in otomatik olarak asagi gecmesini saglamiyor.
+                    Diger tag'in asagi gecmesi icin <br /> yazmamiz gerekmekte. 
+                    Fakat onun yerine biz display: block komutunu kullanabiliriz.
+                    Display konumlandirmayi sagliyor icinde baska komutlarda vardir*/
+    /* display: none; komutu bunun gorunmez olmasini sagliyor.*/
     margin-right: 10px;
 
 }
@@ -48,6 +51,23 @@ label {
     background-color: red;
 }
 
+.fas,
+.far {
+    font-size: 15px;
+}
+
+i {
+    color: black;
+}
+
+textarea{
+    width: 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    width: 200px;
+    border-radius: 20px;
+}
+
 /* Fonts eklemek icin ;
 https://fonts.google.com/ 
 Genellikle Sans veya Serif yazi formatlari tercoh ediliyor.
@@ -56,3 +76,15 @@ Daha anlasilir gozukuyor.*/
 Import olarak eklersek CSS'e ekleriz. 
 CSS rules to specify families altindaki font fmaily'i ise body'e yapistirabiliriz.  */
 
+/* Resim eklemek icin kullanilan yontemlerden baska bir tanesi ise;
+https://fontawesome.com/ sitesinden download ederek ucretsiz olarak 1600 tane 
+font'a ulasabiliriz. Bu indirdigimizi assets icine "lib" dosyasi olusturup atmaliyiz.*/
+
+/* Baska bir yontem ise link ekleyerek kullanma;
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css"
+    />
+    bunu title uzerine yapistirmak makuldur.
+    Linkimizi import ettikten sonra free'lerden istedigimizi secerek
+    use this icon ile bize verilen tag'i buraya yapistirarak kullanabiliriz.*/
